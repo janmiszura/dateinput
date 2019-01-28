@@ -11,6 +11,6 @@ class EntityForm(ModelForm):
         model = Entity
         fields = ['date_type_text', 'date_type_date']
         widgets = {
-            'date_type_text': DateInput(format=('%Y/%m/%d')),
+            'date_type_text': DateInput(),
             'date_type_date': DateInputCustom(),
         }
